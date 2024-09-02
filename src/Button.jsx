@@ -41,7 +41,7 @@ function Button() {
         id="textFile"
         onChange={handleFile}
       ></input>
-      {proc && <button onClick={handleUp}>Process text file</button>}
+      {proc && <button onClick={handleUp}>Process File</button>}
       {show && <button onClick={() => setShow(false)}>Hide</button>}
       {show && <Info freq={freq} common={common} sent={sent} />}
     </div>
