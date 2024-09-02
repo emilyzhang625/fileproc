@@ -7,6 +7,7 @@ A text file uploader that is able to process and analyze text files.
 **Setup:**
 
 Clone the repository
+
 `git clone https://github.com/emilyzhang625/fileup`
 
 Navigate to project directory
