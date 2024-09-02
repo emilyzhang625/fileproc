@@ -7,16 +7,10 @@ A text file uploader that is able to process and analyze text files.
 **Local Setup:**
 
 1. Clone the repository
-`bash
-git clone https://github.com/emilyzhang625/fileup`
-3. Navigate to project directory
-
+`git clone https://github.com/emilyzhang625/fileup`
+2. Navigate to project directory
 `cd fileup`
-
 3. Install the dependencies
-
 `npm install`
-
 4. Start the development server and open in browser
-
 `npm run dev`
