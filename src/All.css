@@ -1,0 +1,15 @@
+.container {
+	display:flex;
+}
+
+.sect1 {
+	flex: 1;
+}
+
+.sect2 {
+	flex: 1;
+}
+
+.info {
+	padding: 20px;
+}

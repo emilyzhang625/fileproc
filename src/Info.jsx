@@ -1,19 +1,27 @@
+import "./All.css";
+
 function Info({ freq, common, sent }) {
   return (
-    <div>
-      <div>Frequency of each word</div>
-      {Object.entries(freq).map(([key, val]) => (
-        <div key={key}>
-          {key}: {val}
+    <div className="info">
+      <div className="container">
+        <div className="sect1">
+          <h4>Word Frequency</h4>
+          {Object.entries(freq).map(([key, val]) => (
+            <div key={key}>
+              {key}: {val}
+            </div>
+          ))}
         </div>
-      ))}
-      <div>Top 10 most common words</div>
-      {Object.entries(common).map(([key, val]) => (
-        <div key={key}>
-          {key}: {val}
+        <div className="sect2">
+          <h4>Most Common Words</h4>
+          {Object.entries(common).map(([key, val]) => (
+            <div key={key}>
+              {key}: {val}
+            </div>
+          ))}
+          <h4>Overall Sentiment: {sent}</h4>
         </div>
-      ))}
-      <div>The overall sentiment is {sent}</div>
+      </div>
     </div>
   );
 }
