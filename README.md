@@ -11,10 +11,13 @@ Clone the repository
 `git clone https://github.com/emilyzhang625/fileup`
 
 Navigate to project directory
+
 `cd fileup`
 
 Install the dependencies
+
 `npm install`
 
 Start the development server and open in browser
+
 `npm run dev`
