@@ -1,4 +1,4 @@
-# Text File Processer
+# File Processer
 A text file processor analyzing word frequency, common words, and overall sentiment of the input.
 
 **Prereqs:**
