@@ -4,7 +4,7 @@ A text file processor analyzing word frequency, common words, and overall sentim
 **Prereqs:**
 [Node.js](https://nodejs.org/)
 
-**Local Setup:**
+**Setup:**
 1. Clone the repository
 `git clone https://github.com/emilyzhang625/fileup`
 2. Navigate to the project directory
