@@ -10,8 +10,12 @@ A text file processor analyzing word frequency, common words, and overall sentim
 git clone https://github.com/emilyzhang625/fileup
 ```
 2. Navigate to the project directory
-`cd fileup`
-3. Install the dependencies
-`npm install`
-4. Start the development server and open in browser
-`npm run dev`
+```bash
+cd fileup
+```
+4. Install the dependencies
+```bash
+npm install```
+6. Start the development server and open in browser
+```bash
+npm run dev```
