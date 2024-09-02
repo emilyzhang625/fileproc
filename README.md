@@ -8,11 +8,11 @@ A text file processor analyzing word frequency, common words, and overall sentim
 **Local Setup:**
 1. Clone the repository
 ```bash
-git clone https://github.com/emilyzhang625/fileup
+git clone https://github.com/emilyzhang625/fileproc
 ```
 2. Navigate to the project directory
 ```bash
-cd fileup
+cd fileproc
 ```
 3. Install the dependencies
 ```bash
