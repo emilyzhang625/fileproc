@@ -5,18 +5,19 @@ A text file uploader that is able to process and analyze text files.
 [Node.js](https://nodejs.org/)
 
 **Setup:**
-Clone the repository
+
+1. Clone the repository
 
 `git clone https://github.com/emilyzhang625/fileup`
 
-Navigate to project directory
+2. Navigate to project directory
 
 `cd fileup`
 
-Install the dependencies
+3. Install the dependencies
 
 `npm install`
 
-Start the development server and open in browser
+4. Start the development server and open in browser
 
 `npm run dev`
