@@ -13,9 +13,11 @@ git clone https://github.com/emilyzhang625/fileup
 ```bash
 cd fileup
 ```
-4. Install the dependencies
+3. Install the dependencies
 ```bash
-npm install```
-6. Start the development server and open in browser
+npm install
+```
+4. Start the development server and open in browser
 ```bash
-npm run dev```
+npm run dev
+```
