@@ -5,7 +5,6 @@ A text file uploader that is able to process and analyze text files.
 [Node.js](https://nodejs.org/)
 
 **Setup:**
-
 Clone the repository
 
 `git clone https://github.com/emilyzhang625/fileup`
