@@ -1,6 +1,7 @@
-import processText from "./processText";
+import processText from "../processText";
 import { useState } from "react";
 import Info from "./Info";
+import procText from "../services/proc";
 
 function Button() {
   const [show, setShow] = useState(false);
@@ -16,12 +17,14 @@ function Button() {
     reader.onload = function (event) {
       const text = event.target.result;
       console.log(text);
-      const result = processText(text);
-      console.log(result);
-      setFreq(result.wordFreq);
-      setCommon(result.mostCommon);
-      setSent(result.sent);
-      setShow(true);
+      const res = procText(text);
+      console.log(res);
+      //   const result = processText(text);
+      //   console.log(result);
+      //   setFreq(result.wordFreq);
+      //   setCommon(result.mostCommon);
+      //   setSent(result.sent);
+      //   setShow(true);
     };
 
     reader.readAsText(file);
@@ -42,8 +45,8 @@ function Button() {
         onChange={handleFile}
       ></input>
       {proc && <button onClick={handleUp}>Process File</button>}
-      {show && <button onClick={() => setShow(false)}>Hide</button>}
-      {show && <Info freq={freq} common={common} sent={sent} />}
+      {/* {show && <button onClick={() => setShow(false)}>Hide</button>}
+      {show && <Info freq={freq} common={common} sent={sent} />} */}
     </div>
   );
 }
