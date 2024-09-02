@@ -2,8 +2,8 @@
 A text file processor analyzing word frequency, common words, and overall sentiment of the input.
 
 **Prereqs:**
-- [Node.js](https://nodejs.org/)
 - [Git](https://git-scm.com/)
+- [Node.js](https://nodejs.org/)
 
 **Setup:**
 1. Clone the repository
