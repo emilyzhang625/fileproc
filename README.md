@@ -7,7 +7,7 @@ A text file processor analyzing word frequency, common words, and overall sentim
 **Local Setup:**
 1. Clone the repository
 `git clone https://github.com/emilyzhang625/fileup`
-2. Navigate to project directory
+2. Navigate to the project directory
 `cd fileup`
 3. Install the dependencies
 `npm install`
