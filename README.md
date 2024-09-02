@@ -1,5 +1,5 @@
 # File Processer
-A file uploader that is able to process and analyze text files.
+A text file processor analyzing word frequency, common words, and overall sentiment of the input.
 
 **Prereqs:**
 [Node.js](https://nodejs.org/)
