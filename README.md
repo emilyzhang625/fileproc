@@ -8,7 +8,7 @@ A text file uploader that is able to process and analyze text files.
 
 Clone the repository
 
-```git clone https://github.com/emilyzhang625/fileup```
+`git clone https://github.com/emilyzhang625/fileup`
 
 Navigate to project directory
 `cd fileup`
