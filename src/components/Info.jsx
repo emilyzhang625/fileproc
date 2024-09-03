@@ -1,6 +1,12 @@
 import "./All.css";
+import proc from "../services/proc";
 
 function Info({ freq, common, sent, setShow }) {
+  const handleCancel = () => {
+    proc.delText();
+    setShow(false);
+  };
+
   return (
     <div className="info">
       <div className="container">
@@ -20,7 +26,7 @@ function Info({ freq, common, sent, setShow }) {
             </div>
           ))}
           <h4>Overall Sentiment: {sent}</h4>
-          <button onClick={() => setShow(false)}>Cancel</button>
+          <button onClick={handleCancel}>Cancel</button>
         </div>
       </div>
     </div>

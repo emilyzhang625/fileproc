@@ -11,4 +11,8 @@ const procText = (text) => {
   return req.then((res) => res.data);
 };
 
-export default procText;
+const delText = () => {
+  axios.delete(SERVER_URL);
+};
+
+export default { procText, delText };

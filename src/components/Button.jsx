@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Info from "./Info";
-import procText from "../services/proc";
+import proc from "../services/proc";
 import "./All.css";
 
 function Button() {
@@ -16,7 +16,7 @@ function Button() {
       reader.readAsText(file);
       reader.onload = function (event) {
         const text = event.target.result;
-        procText(text).then((res) => {
+        proc.procText(text).then((res) => {
           console.log(res);
           setFreq(res.freq);
           setCommon(res.comm);
