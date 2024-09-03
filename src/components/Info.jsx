@@ -1,6 +1,6 @@
 import "./All.css";
 
-function Info({ freq, common, sent }) {
+function Info({ freq, common, sent, setShow }) {
   return (
     <div className="info">
       <div className="container">
@@ -20,6 +20,7 @@ function Info({ freq, common, sent }) {
             </div>
           ))}
           <h4>Overall Sentiment: {sent}</h4>
+          <button onClick={() => setShow(false)}>Cancel</button>
         </div>
       </div>
     </div>

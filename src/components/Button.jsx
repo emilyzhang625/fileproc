@@ -1,49 +1,47 @@
 import { useState } from "react";
 import Info from "./Info";
 import procText from "../services/proc";
+import "./All.css";
 
 function Button() {
   const [show, setShow] = useState(false);
   const [freq, setFreq] = useState(null);
   const [common, setCommon] = useState(null);
   const [sent, setSent] = useState(null);
-  const [proc, setProc] = useState(false);
-
-  const handleUp = () => {
-    const file = document.getElementById("textFile").files[0];
-    const reader = new FileReader();
-
-    reader.onload = function (event) {
-      const text = event.target.result;
-      procText(text).then((res) => console.log(res));
-      //   const result = processText(text);
-      //   console.log(result);
-      //   setFreq(result.wordFreq);
-      //   setCommon(result.mostCommon);
-      //   setSent(result.sent);
-      //   setShow(true);
-    };
-
-    reader.readAsText(file);
-  };
 
   const handleFile = (event) => {
-    const selected = event.target.files[0];
-    if (selected) setProc(true);
-    else setProc(false);
+    const file = event.target.files[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.readAsText(file);
+      reader.onload = function (event) {
+        const text = event.target.result;
+        procText(text).then((res) => {
+          console.log(res);
+          setFreq(res.freq);
+          setCommon(res.comm);
+          setSent(res.sent);
+          setShow(true);
+        });
+      };
+    } else setShow(false);
   };
 
   return (
     <div>
-      <input
-        type="file"
-        accept=".txt"
-        id="textFile"
-        onChange={handleFile}
-      ></input>
-      {proc && <button onClick={handleUp}>Process File</button>}
-      {/* {show && <button onClick={() => setShow(false)}>Hide</button>}
-      {show && <Info freq={freq} common={common} sent={sent} />} */}
+      {!show && (
+        <div className="container2">
+          <input
+            type="file"
+            accept=".txt"
+            id="textFile"
+            onChange={handleFile}
+          ></input>
+        </div>
+      )}
+      {show && (
+        <Info freq={freq} common={common} sent={sent} setShow={setShow} />
+      )}
     </div>
   );
 }
