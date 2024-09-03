@@ -1,4 +1,3 @@
-import processText from "../processText";
 import { useState } from "react";
 import Info from "./Info";
 import procText from "../services/proc";
@@ -16,9 +15,7 @@ function Button() {
 
     reader.onload = function (event) {
       const text = event.target.result;
-      console.log(text);
-      const res = procText(text);
-      console.log(res);
+      procText(text).then((res) => console.log(res));
       //   const result = processText(text);
       //   console.log(result);
       //   setFreq(result.wordFreq);
